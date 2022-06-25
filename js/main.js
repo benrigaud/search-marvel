@@ -25,9 +25,9 @@
           let heroIMG = hero.thumbnail.path + '.' + hero.thumbnail.extension
           heroURL.forEach(link => {
             if(link.type === 'wiki'){
-              contentButtons += `<a href="${link.url}" class="btn">${link.type}</a>`
+              contentButtons += `<a href="${link.url}" class="btn" target="_blank">${link.type}</a>`
             } else if (link.type === 'comiclink'){
-              contentButtons += `<a href="${link.url}" class="btn">Appears on</a>`
+              contentButtons += `<a href="${link.url}" class="btn" target="_blank">Appears on</a>`
             }
           })
           contentHTML += `
